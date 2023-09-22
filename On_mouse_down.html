@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>On Mouse Down</title>
+		
+		<style>
+			.div-red{
+				border: 10px solid navy;
+				width: 30%;
+				height: 30%;
+				backgroung-color: #D7CCC8;
+			}
+		</Style>
+		<script>
+			function clickMe(){
+				
+				alert("Find out who you are and do it on purpose." );
+			}	
+			
+			function changeMyColor(myColor){
+				document.bgColor=myColor;
+		
+			}
+			
+		</script>
+		
+		<body>
+			<div class="div-red" onmousedown="changeMyColor('#E1BEE7')">
+				On Mouse Down!
+				
+				<p><i>* The onmousedown attribute fires when a mouse button is pressed down on the element.</i></p>
+		</div>
+		
+		</body>
+	</head>
+
+</html>
