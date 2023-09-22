@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>On Mouse Out</title>
+		
+		<style>
+			.div-red{
+				border: 10px solid navy;
+				width: 30%;
+				height: 30%;
+				backgroung-color: #D7CCC8;
+			}
+		</Style>
+		<script>
+			function clickMe(){
+				
+				alert("Find out who you are and do it on purpose." );
+			}	
+			
+			function changeMyColor(myColor){
+				document.bgColor=myColor;
+		
+			}
+			
+		</script>
+		
+		<body>
+			<div class="div-red" onmouseout="changeMyColor('#C092D1')">
+				On Mouse Out!
+				
+				<p><i>* The onmouseout attribute fires when the mouse pointer moves out of an element.</i></p>
+		</div>
+		
+		</body>
+	</head>
+
+</html>
