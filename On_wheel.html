@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>On Wheel</title>
+		
+		<style>
+			.div-red{
+				border: 10px solid navy;
+				width: 30%;
+				height: 30%;
+				backgroung-color: #D7CCC8;
+			}
+		</Style>
+		<script>
+			function clickMe(){
+				
+				alert("Find out who you are and do it on purpose." );
+			}	
+			
+			function changeMyColor(myColor){
+				document.bgColor=myColor;
+		
+			}
+			
+		</script>
+		
+		<body>
+			<div class="div-red" onwheel="changeMyColor('#DE3163')">
+				On Wheel!
+				
+				<p><i>* The onwheel attribute fires when the wheel of a pointing device is rolled up or down over an element.</i></p>
+				
+				<p><i>* The onwheel attribute also fires when the user scrolls or zooms on an element by using a touchpad (like the "mouse" of a laptop).</i></p>
+		</div>
+		
+		</body>
+	</head>
+
+</html>
