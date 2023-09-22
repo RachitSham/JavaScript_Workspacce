@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>On Mouse Move</title>
+		
+		<style>
+			.div-red{
+				border: 10px solid navy;
+				width: 30%;
+				height: 30%;
+				backgroung-color: #D7CCC8;
+			}
+		</Style>
+		<script>
+			function clickMe(){
+				
+				alert("Find out who you are and do it on purpose." );
+			}	
+			
+			function changeMyColor(myColor){
+				document.bgColor=myColor;
+		
+			}
+			
+		</script>
+		
+		<body>
+			<div class="div-red" onmousemove="changeMyColor('#69D1C6')">
+				On Mouse Move!
+				
+				<p><i>* The onmousemove attribute fires when the pointer is moving while it is over an element.</i></p>
+		</div>
+		
+		</body>
+	</head>
+
+</html>
