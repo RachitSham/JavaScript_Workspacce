@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>On Context Menu</title>
+		
+		<style>
+			.div-red{
+				border: 10px solid navy;
+				width: 30%;
+				height: 30%;
+				backgroung-color: #D7CCC8;
+			}
+		</Style>
+		<script>
+			function clickMe(){
+				
+				alert("Find out who you are and do it on purpose." );
+			}	
+			
+			function changeMyColor(myColor){
+				document.bgColor=myColor;
+		
+			}
+			
+		</script>
+		
+		<body>
+			
+		<div class="div-red" oncontextmenu=changeMyColor('#82E0AA')>
+				On Context Menu!
+				<p><i>* The oncontextmenu attribute fires when the user right-clicks on an element to open the context menu.</i></p>
+		
+		
+		</div>
+		
+		
+		</body>
+	</head>
+
+</html>
