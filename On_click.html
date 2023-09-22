@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>On Click</title>
+		
+		<style>
+			.div-red{
+				border: 10px solid navy;
+				width: 30%;
+				height: 30%;
+				backgroung-color: #D7CCC8;
+			}
+		</Style>
+		<script>
+			function clickMe(){
+				
+				alert("Find out who you are and do it on purpose." );
+			}	
+			
+			function changeMyColor(myColor){
+				document.bgColor=myColor;
+		
+			}
+			
+		</script>
+		
+		<body>
+			<div class="div-red" onclick="changeMyColor('#6495ED')">
+				On Click!
+				
+				<p><i>* The onclick attribute fires on a mouse click on the element.</i></p>
+				
+		</div>
+		
+		</body>
+	</head>
+
+</html>
