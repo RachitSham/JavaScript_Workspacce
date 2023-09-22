@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<title>On Double Click</title>
+	<style>
+		.div-red{
+			border: 10px solid  navy;
+			width: 25%;
+			height: 25%;
+			background-color: #A2D9CE;
+		}
+	
+	</style>
+	<script>
+			function clickMe(){
+			
+			alert("Love your family, work super hard, live your passion!")
+			
+			}
+			function changeMyColor(mycolor){
+					document.bgColor=mycolor;
+			
+			}
+	</script>
+	</head>
+	<body>
+		<div class="div-red" ondblclick="changeMyColor('#B2EBF2')">
+				On Double click!
+				
+				<p><i>* The ondblclick attribute fires on a mouse double-click on the element.</i></p>
+		</div>
+	
+	</body>
+</html>
