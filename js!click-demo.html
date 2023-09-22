@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>JavaScript Alert</title>
+		<style>
+		.div-red{
+			border: 5px solid navy;
+			width: 20%;
+			height: 20%;
+			background-color: #CCCCFF ;
+		}
+		
+		</style>
+		<script> 
+			function clickMe(){
+			
+			alert("your are Click me!");
+
+            }
+			function changeMyColor(myColor){
+				document.bgColor=myColor;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="div-red" onclick="changeMyColor('IndianRed')">
+				 On Click!
+				
+				<p><i>* The onclick attribute fires on a mouse click on the element.</i></p>
+		</div>
+		
+		<div class="div-red" ondblclick="changeMyColor('blue')">
+				On Double click!
+				
+				<p><i>* The ondblclick attribute fires on a mouse double-click on the element.</i></p>
+		</div>
+		
+		<div class="div-red" onmousedown="changeMyColor('purple')">
+				On Mouse Down!
+				
+				<p><i>* The onmousedown attribute fires when a mouse button is pressed down on the element.</i></p>
+		</div>
+		
+		<div class="div-red" onmousemove="changeMyColor('LightCoral')">
+				On Mouse Move!
+				
+				<p><i>* The onmousemove attribute fires when the pointer is moving while it is over an element.</i></p>
+				
+		</div>
+		
+		<div class="div-red" onmouseout=changeMyColor('#9900FF')>
+				On Mouse Out!
+				<p><i>* The onmouseout attribute fires when the mouse pointer moves out of an element.</i></p>
+		
+		</div>
+		
+		<div class="div-red" onmouseover=changeMyColor('#6699FF')>
+				On Mouse Over!
+				
+				<p><i>* The onmouseover attribute fires when the mouse pointer moves over an element.</i></p>
+		</div>
+		
+		<div class="div-red" onmouseup=changeMyColor('#F5B041')>
+				On Mouse Up!
+				
+				<p><i>The onmouseup attribute fires when a mouse button is released over the element.</i></p>
+		</div>
+		
+		<div class="div-red" onwheel=changeMyColor('#138D75')>
+				On Mouse Wheel!
+				
+				<p><i>* The onwheel attribute fires when the wheel of a pointing device is rolled up or down over an element.</i></p>
+		
+		
+		</div>
+		
+		<div class="div-red" oncontextmenu=changeMyColor('#82E0AA')>
+				On Context Menu!
+				<p><i>* The oncontextmenu attribute fires when the user right-clicks on an element to open the context menu.</i></p>
+		
+		
+		</div>
+		
+		
+	</body>
+</html>
