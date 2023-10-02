@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Evaluation Of Expression In JavaScript .</title>
+	<head>
+	
+	<body>
+		<h1 style="color:#191970">Display The Evaluation Of Expression In JavaScript .</h1>
+		
+		<p id="demo"></p>
+		
+		<script>
+		/* In, Both The Cases The Value Of h Is Different !
+			here, when we evaluate the expression from left to right firstly.
+			JS will add the no. And , data is considered as a string .*/
+			
+			var h= 20 + 60 + 63 +"data";
+		
+		//Here, we go from right to left if we add anything in the string it will considered the no also string.//
+
+			var r= "data" + 20 + 60 + 30;
+		
+			document.getElementById("demo").innerHTML =
+                "The Value Of h -"	+ h	+ "<br>" +		
+			
+				 "The Value Of r -"	+ r;
+		</script>
+		
+	</body>
+</html>
