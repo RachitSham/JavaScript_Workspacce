@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<title>Function Nesting In JavaScript . </title>
+		
+	<script type="text/JavaScript">
+		function first(x , y)
+		{
+			var name;
+			name = x + y;
+			return name;
+		}
+		function second()
+		{
+			var result;
+			result = first('Virat' , 'Kholi');
+			document.write (result);
+		}
+	</script>
+	</head>
+	
+	<body>
+		<form>
+			<h1 style="color: #7FE817">Display The Function Nesting In JavaScript . </h1>
+		
+			<p>* The Function Nesting In JavaScript.</p>
+		
+			<input type="button" onclick="second()" value="Click To My Function">
+			
+		</form>	
+	</body>
+
+</html>
