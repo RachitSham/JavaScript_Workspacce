@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Invoking A Function With Function Method In javaScript .</title>
+	</head>
+	
+	<body>
+		<h1 style="color: #52D017">Display Invoking A Function With Function Method In javaScript .</h1>
+		
+		<p>* Invoking A Function With Function Method . </p>
+		
+		<p id="demo"></p>
+		
+	<script>
+		var Result;
+		function myFunction(a , b)
+		{
+			return a * b;
+		}
+		var  arr=[500,3];
+		Result = myFunction.apply(Result, arr);
+		document.getElementById("demo").innerHTML ="The Value Is"  + Result;
+		
+		/* We Can Invoke Any Function in javaScript .
+			By Using Call() Method And Apply() Method are Predefined Method In JavaScript.*/
+			
+	</script>
+	
+	</body>
+</html>
