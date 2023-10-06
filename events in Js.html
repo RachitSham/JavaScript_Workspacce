@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Events In JavaScript .</title>
+		
+	</head>
+	
+	<body>
+		<h1 style="color: #BDF516">Display The Events In JavaScript .</h1>
+		
+		<p><b>* Select The Color From The List !</b></p>
+		
+		<select id="mySelect" onchange="myFunction()" style="color:#151B54">
+			<option value="Red">Red
+			<option value="Orange">Orange
+			<option value="Purple">Purple
+			<option value="Black">Black
+			<option value="Royal Blue">Royal Blue	
+			
+		</select>	
+		<p id="demo"></p>
+	
+	<script>
+		function myFunction()
+		{
+			var x = document.getElementById("mySelect").value;
+			
+			document.getElementById("demo").innerHTML = "You Have Selected: " + x;
+		
+		}
+	
+	</script>
+	
+	</body>
+</html>
