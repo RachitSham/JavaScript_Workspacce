@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<title>Invoking A Function As Function Constructor .</title>
+		
+	</head>
+	
+	<body>
+		<h1 style="color: #033E3E">Display The Invoking A Function As Function Constructor .</h1>
+		
+		<p>* Invoking A Function With Constructor.</p>
+		
+		<p id="demo"></p>
+		
+	<script>
+		function myFunction(a , b)
+		{
+			this.firstName = a;
+			this.lastName = b;
+		}
+		
+		var x = new myFunction("Rohit" , "vishwakarma")
+		
+		document.getElementById("demo").innerHTML = x.firstName + " " + x.lastName;
+		
+	</script>
+	
+	</body>
+</html>
