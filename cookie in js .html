@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Cookies In JavaScript .</title>
+			
+	<script>
+		function writeCookie()
+			{
+				var now = new Date();
+				now.setMonth( now.getMonth() + 1 );
+				cookievalue= escape(document.myform.cook.value) + ";";
+				document.cookie="name=" + cookievalue;
+				document.cookie = "expires=" +
+				now.toUTCString() + ";"
+				alert ("Cookie Are Created....");
+				alert ("The Value Of Cookie : "  + cookievalue );
+				alert ("Expiry Date Is :" + now);
+			
+			}
+	
+	</script>
+		
+	</head>
+	
+	<body>
+	<form name="myform" action="">
+	
+		<h1 style="color: #7D0552">Display The Cookies In JavaScript .</h1>
+	
+		Enter The Cookie : <input type="text" name="cook"/>
+		<input type="button" value="set Cookie" onclick="writeCookie();"/>
+	
+	</form>
+	
+	</body>
+</html>
