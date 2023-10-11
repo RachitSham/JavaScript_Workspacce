@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Throw Operator In JavaScript .</title>
+		
+	</head>
+	
+	<body>
+		<h1 style="color :#F8B88B">Display The Throw Operator In JavaScript .</h1>
+		
+		<p><b>* Please Input a Number Between 10 And 20 .</b></p>
+
+		<input id="demo" type="text">
+		<button type="button" onclick="myFunction()">Test Input</button>
+		
+		<p id="message"></p>
+		
+		<script>
+		function myFunction()
+		{
+			var message, x;
+			message = document.getElementById("message");
+			message.innerHTML = "";
+			x = document.getElementById("demo").value;
+			
+			try {
+					if(x == "")  throw "Is Empty";
+					if(isNaN(x)) throw "Is Not A Number";
+					x = Number(x);
+					if(x > 10) throw "The Number Is Too High ";
+					if(x < 20) throw "The Number Is Too Low ";
+	
+			}
+			catch(err) {
+					message.innerHTML = "Input " + err;
+					
+			}
+			finally {
+				document.getElementById("demo").value = "";
+			}
+			
+		}
+		
+		</script>
+		
+	</body>
+</html>
