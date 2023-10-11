@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Creating Object In JavaScript .</title>
+	</head>
+	<body>
+		<h1 style="color :#CC7A8B">Display The Object By Using Constructor In JavaScript .</h1>
+		
+		<p id="demo"></p>
+		
+		<script>
+		function person(first, last, age)
+		{
+			this.firstName = first;
+			this.lastName = last;
+			this.age = age;
+			
+		}
+		var father= new person("Jhon","Dey",50);
+		var mother= new person("Sara","Dey",40);
+		
+		document.getElementById("demo").innerHTML = 
+		"My Father Is " + father.age + ". My Mother Is " + mother.age;
+		
+		</script>
+	</body>
+</html>
