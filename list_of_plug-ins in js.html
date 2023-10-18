@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>List Of Plug-Ins In JavaScript .</title>
+		
+	</head>
+	
+	<body>
+		<h1 style="color: #C25283">Display The Plug-Ins In JavaScript .</h1>
+		<table border="1">
+			<tr>
+				<th>Plug-Ins name</th>
+				<th>FileName</th>
+				<th>Description</th>
+			</tr>
+
+			<script language="javaScript" type="text/javaScript">
+				for(i=0; i<navigator.plugins.length; i++){
+					document.write("<tr><td>");
+					document.write(navigator.plugins[i].name);
+					document.write("</td><td>");
+					document.write(navigator.plugins[i].filename);
+					document.write("</td><td>");
+					document.write(navigator.plugins[i].description);
+					document.write("</td></tr>");
+				}
+			</script>	
+		</table>	
+	</body>
+</html>
