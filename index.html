@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Holi</title>
+    <style>
+        body {
+            background-color: #ffcccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: rainbow 3s infinite;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        @keyframes rainbow {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Holi, Rachit Sharma!</h1>
+    <p>May this festival of colors bring joy, happiness, and prosperity into your life!</p>
+    <script>
+        setTimeout(() => {
+            alert("Wishing you a very Happy Holi, Rachit Sharma! 🎨✨");
+        }, 2000);
+    </script>
+</body>
+</html>
